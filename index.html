@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jord Luppens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-inner">
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="#home" class="active">Menu</a>
+                    <div id="myLinks">
+                        <a href="#news">Over mij</a>
+                        <a href="#contact">Interesses</a>
+                        <a href="#about">test</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- End smartphone / tablet look -->
+            </div>
+
+            <div class="header">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="first">
+                <div class="first-text">
+                    <h1>Jord<br>Luppens</h1>
+                </div>
+                <div class="first-image">
+                    <img src="images/profielfoto.jpg">
+                </div>
+            </div>
+
+            <div class="second">
+                <div class="logo2">
+                </div>
+            </div>
+            <div class="second-text">
+                <h3>Over mij</h3>
+                <p>Mijn naam is Jord. Ik ben 18 jaar oud.<br>Ik ben geboren in Asse op 24 april 2003.</p>
+                <div class="logo3">
+                    <div class="second-text">
+                        <h3>Interesses</h3>
+                        <p>test</p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+
+        </div>
+</body>
+
+</html>
