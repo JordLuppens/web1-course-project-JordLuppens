@@ -11,23 +11,21 @@
 
 <body>
     <div class="wrapper">
+        <div class="desk">
+            <img src="images/bureau.jpg">
+        </div>
         <div class="wrapper-inner">
-            <!-- Simulate a smartphone / tablet -->
             <div class="mobile-container">
 
-                <!-- Top Navigation Menu -->
                 <div class="topnav">
-                    <a href="#home" class="active">Menu</a>
+                    <a href="javascript:void(0);" class="active" onclick="myFunction()">Menu</a>
                     <div id="myLinks">
-                        <a href="#news">Over mij</a>
-                        <a href="#contact">Interesses</a>
-                        <a href="#about">test</a>
+                        <a href="#Over mij">Over mij</a>
+                        <a href="#School">School</a>
+                        <a href="#Hobbies">Hobbies</a>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+
                 </div>
-                <!-- End smartphone / tablet look -->
             </div>
 
             <div class="header">
@@ -47,29 +45,65 @@
                 <div class="logo2">
                 </div>
             </div>
+
             <div class="second-text">
-                <h3>Over mij</h3>
-                <p>Mijn naam is Jord. Ik ben 18 jaar oud.<br>Ik ben geboren in Asse op 24 april 2003.</p>
-                <div class="logo3">
-                    <div class="second-text">
-                        <h3>Interesses</h3>
-                        <p>test</p>
+
+                <div class="flex">
+                    <div>
+                        <h3>Over mij</h3>
+                        <p>Mijn naam is Jord. Ik ben 18 jaar oud.<br>Ik ben geboren in Asse op 24 april 2003.</p>
+                    </div>
+                    <div>
+                        <img src="images/card.png">
                     </div>
                 </div>
             </div>
 
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myLinks");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            </script>
+            <div class="logo3">
+            </div>
 
+            <div class="second-text">
+
+                <div class="flex">
+                    <div>
+                        <h3>School</h3>
+                        <p>Ik volg Multimedia en creatieve technologie op de Erasmus Hogeschool. Ik koos deze richting
+                            omdat ik graag met computers werk en mijn kennis wil uitbreiden.</p>
+                    </div>
+                    <div>
+                        <img src="images/book.png">
+                    </div>
+                </div>
+            </div>
+            <div class="logo3">
+            </div>
+            <div class="second-text">
+
+                <div class="flex">
+                    <div>
+                        <h3>Hobbies</h3>
+                        <p>In mijn vrije tijd spreek ik af en toe met vrienden af, ga ik fietsen of wandelen, en
+                            game ik.</p>
+                    </div>
+                    <div>
+                        <img src="images/controller.png">
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
